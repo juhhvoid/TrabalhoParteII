@@ -95,7 +95,7 @@ html {
     
 }
 
-.body #subBtn {
+.body .subBtn {
     background-color: #c8e080;
     outline: none;
     border: none;
@@ -104,6 +104,8 @@ html {
     width: 100px;
     align-self: flex-end;
     border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 13px #888;
 }
 
 .body #list {

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,7 +20,7 @@
                 <li>Quem Somos</li>
                 <li>Doação</li>
                 <li>Galeria</li>
-                <li>Comentario</li>
+                <li>Mensagem</li>
                 <li>Contato</li>
             </ul>
         </nav>
@@ -33,9 +32,9 @@
         <div class="container">            
             <div>
                 <form onsubmit="onFormSubmit(event)">
-                    <label for="txtTextArea">Escreva um comentário...</label>
+                    <label for="txtTextArea">Escreva uma mensagem para nós...</label>
                     <textarea class="textarea" maxlength="200" id="txtTextArea"></textarea>
-                    <input type="submit" value="Comentar" id="subBtn">
+                    <input type="submit" value="Comentar" class="subBtn">
                 </form>
             </div>
             <ul id="list"></ul>

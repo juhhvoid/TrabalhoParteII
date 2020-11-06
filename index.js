@@ -47,11 +47,3 @@ const loadComments = () => {
 }
 
 init()
-
-
-
-const test = () => 'aa'
-
-const test2 = () => {
-    return 'aa'
-}
