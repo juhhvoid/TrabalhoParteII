@@ -1,0 +1,159 @@
+:root{
+    --headerheight: 120px; /*testando variáveis*/
+    --headerweight: 70%;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--headerheight);
+    background-color: #c8e080;
+    box-shadow: 2px 2px 13px #888;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--headerweight);
+    margin: auto;
+    align-items: center;
+}
+
+.header .logo {
+    height: var(--headerheight);
+}
+
+.header .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex
+}
+
+.header .menu li {
+    margin-right: 6px;
+    padding: 12px 6px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.header .menu li:last-child{
+    margin-right: 0;
+}
+
+.header .menu li:hover{
+   background-color: #b4d846;
+   border-radius: 20px;
+}
+
+/*Estilo do body*/
+
+.body {
+    max-width: var(--headerweight);
+    margin: auto;
+    margin-top: calc(var(--headerheight) + 16px);
+    
+}
+
+.body .container {
+    margin: 16px;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 2px 2px 13px #888;
+}
+
+.body form {
+    display: flex;
+    flex-direction: column;
+}
+
+.body [for="txtTextArea"]{    
+    margin-bottom: 16px;
+    display: block;
+}
+
+.body .textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #8c88886e; 
+    outline: none;
+    height: 120px;
+    transition: 0.8s;
+    margin-bottom: 16px;
+}
+
+.body .textarea:focus {
+    border-bottom-color: black;
+    
+}
+
+.body #subBtn {
+    background-color: #c8e080;
+    outline: none;
+    border: none;
+    padding: 7px;
+    color: #222;
+    width: 100px;
+    align-self: flex-end;
+    border-radius: 5px;
+}
+
+.body #list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.body #list li {
+    padding: 12px;
+    border: none;
+    margin: 12px;
+    border-color: #b4d846;
+    border-left: 5px solid #b4d846;
+    border-top: 1px solid #b4d846;
+    border-right: 1px solid #b4d846;
+    border-bottom: 1px solid #b4d846;
+    border-radius: 5px;
+    background-color: #b3d8461e;
+}
+
+/*Estilo do footer*/
+
+.footer {
+    width: 100%;    
+    background-color: #c8e080;
+    padding: 30px 0;
+}
+
+.footer .container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: var(--headerweight);
+    margin: auto;
+}
+
+.footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    border-radius: 25px;
+}
+
+.footer h4 {
+    font-weight: normal;
+}

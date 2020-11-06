@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="container">
+        <img src="img/logo.png" class="logo" alt="">
+        <nav class="navs">
+            <ul class="menu">
+                <li>Ínicio</li>
+                <li>Quem Somos</li>
+                <li>Doação</li>
+                <li>Galeria</li>
+                <li>Comentario</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+
+    <div class="body">
+        <div class="container">            
+            <div>
+                <form onsubmit="onFormSubmit(event)">
+                    <label for="txtTextArea">Escreva um comentário...</label>
+                    <textarea class="textarea" maxlength="200" id="txtTextArea"></textarea>
+                    <input type="submit" value="Comentar" id="subBtn">
+                </form>
+            </div>
+            <ul id="list"></ul>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <h4>R. Cel. Alfredo Custódio de Paula, nº 1045 <br> Pouso Alegre, MG</h4>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/casadesaorafaeloficial/?rf=114561691974005" title="Facebook"
+            target="_blank"><img src="img/face.png" title="Facebook" alt="Facebook"></a>
+            
+            <a href="https://instagram.com/saorafaeloficial?igshid=10g45nzua88ol" title="Instagram"
+            target="_blank"><img src="img/insta.jpg" title="Instagram" alt="Instagram"></a>
+
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
