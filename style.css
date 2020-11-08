@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --headerheight: 120px; /*testando variáveis*/
     --headerweight: 70%;
@@ -37,11 +42,13 @@ html {
     display: flex
 }
 
-.header .menu li {
+.header .menu li a{
     margin-right: 6px;
     padding: 12px 6px;
     cursor: pointer;
     transition: 0.8s;
+    color: #222;
+    text-decoration: none;
 }
 
 .header .menu li:last-child{
@@ -53,15 +60,21 @@ html {
    border-radius: 20px;
 }
 
+
+/*MENSAGEM*/
 /*Estilo do body*/
 
 .body {
     max-width: var(--headerweight);
     margin: auto;
-    margin-top: calc(var(--headerheight) + 16px);
-    
+    margin-top: calc(var(--headerheight) + 16px);    
 }
 
+.msgTitle {
+    font-weight: normal;
+    text-align: center;
+    color: rgb(255, 0, 140);
+}
 .body .container {
     margin: 16px;
     background-color: white;
@@ -131,8 +144,10 @@ html {
 
 .footer {
     width: 100%;    
-    background-color: #c8e080;
+    background-color: #4f4a47;
     padding: 30px 0;
+    margin: 0;
+
 }
 
 .footer .container {
@@ -157,5 +172,341 @@ html {
 }
 
 .footer h4 {
+    font-weight: normal;
+}
+
+/*PAGINA INICIAL*/
+/** slideshow **/
+
+.galeria {
+    max-width: var(--headerweight);
+    margin: auto;
+    margin-top: calc(var(--headerheight) + 16px);    
+}
+.galeria .container {
+    margin: 16px;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+   
+}
+.galeria .container img {
+    height: 70%;
+    width: 80%;
+    padding: 20px;
+    border-bottom: solid 2px #c8e080;
+}
+.galeria h2, p {
+    font-weight: normal;
+    padding: 20px;
+}
+
+/*QUEM SOMOS*/
+.quemsomos {
+    max-width: var(--headerweight);
+    margin: auto;
+    margin-top: calc(var(--headerheight) + 16px);    
+}
+.quemsomos .container {
+    margin: 16px;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    background-image: url(img/bodyBackground.jpg);
+    opacity: 0.8;
+    width: 100%;
+    height: 55.4vh;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 20pt;
+}
+
+
+/*DOAÇÃO*/
+.doacao {
+    max-width: var(--headerweight);
+    margin: auto;
+    margin-top: calc(var(--headerheight) + 16px);    
+}
+.doacao .container {
+    margin: 16px;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    background-image: url(img/background.png);
+    opacity: 0.8;
+    width: 100%;
+    height: 55.4vh;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.doacao .container {
+    text-align: center;
+    font-size: 20pt;
+}
+
+/*GALERIA*/
+.album {
+    max-width: var(--headerweight);
+    margin: auto;
+    margin-top: calc(var(--headerheight) + 16px);    
+}
+.album #album-fotos {
+    margin: 16px;
+    background-color: white;
+    padding: 16px;
+
+}
+
+.album p{
+    text-align: center;
+    font-size: 20pt;
+    margin: 20px;
+}
+
+ul#album-fotos{
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-fotos li{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .5s ease-in;
+}
+
+ul#album-fotos li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 12pt;
+    line-height: 370px;
+    padding: 5px;
+
+}
+
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.6);
+}
+
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01{
+    background: url(img/colab01.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto02{
+    background: url(img/colab02.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03{
+    background: url(img/colab03.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04{
+    background: url(img/colab05.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto05{
+    background: url(img/doa01.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto06{
+    background: url(img/doa02.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto07{
+    background: url(img/doa03.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto07:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto08{
+    background: url(img/doa04.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto08:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto09{
+    background: url(img/doa05.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto09:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto10{
+    background: url(img/evento01.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto10:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto11{
+    background: url(img/evento02.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto11:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto12{
+    background: url(img/evento03.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto12:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto13{
+    background: url(img/evento04.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto13:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto14{
+    background: url(img/festa01.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto14:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto15{
+    background: url(img/festa02.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto15:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto16{
+    background: url(img/festa03.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto16:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/*CONTATO*/
+.contato {
+    max-width: var(--headerweight);
+    margin: auto;
+    margin-top: calc(var(--headerheight) + 16px);    
+}
+.contato .container {
+    margin: 16px;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contato h1, h3 {
+    text-align: center;
+    font-size: 20pt;
     font-weight: normal;
 }
