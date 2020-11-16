@@ -1,5 +1,5 @@
 objTextArea = document.getElementById('txtTextArea');
-const UUID = '95b2510b-9086-4fcb-b374-cb449f9939fb'
+const UUID = 'de2d2054-17ef-45bf-9b53-a54c046f063a'
 
 const init = () => {
     loadComments()
